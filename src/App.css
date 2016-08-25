@@ -1,0 +1,131 @@
+/************* NAVBAR *************/
+
+.navbar {
+  height: 90px;
+  width: 100%;
+  background-color: #0961A0;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.navbar-logo {
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  height: 50%;
+  width: 20%;
+  padding-left: 5%;
+}
+
+.navbar-link-container {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  padding-left: 15%;
+  font-weight: 300;
+}
+
+.navbar-bottom {
+  height: 10px;
+  width: 100%;
+  background-color: #00BFFF;
+}
+
+.background {
+  z-index: 0;
+  /*background-color: gray;*/
+  height: 100vh;
+  width: 100%;
+  background: url('http://www.mapashaco.com/images/sliders/revolution/slide6.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/************* INTRO BOX *************/
+
+.intro-wrapper {
+  z-index: 1;
+  height: 86vh;
+  width: 45%;
+  background-color: white;
+  position: relative;
+  top: 3%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+
+.get-started-container {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  height: 20%;
+  margin-bottom: -2%;
+}
+
+.get-started-img {
+  height: 4em;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.what-is {
+  text-align: center;
+  font-size: 1.65vw;
+  margin-top: -2%;
+}
+
+.what-is-hr {
+  background: #00BFFF;
+  width: 80%;
+  height: 2px;
+  border-radius: 15px;
+}
+
+.intro-text-container {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.intro-text {
+  font-size: .85em;
+}
+
+.intro-trait-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro-trait {
+  margin: 3px 0 3px 0;
+}
+
+
+
+/***** MEDIA QUERIES*****/
+/* these will take effect below 715px width */
+@media (max-width: 715px) {
+  .intro-text {
+    font-size: .6em;
+  }
+  .intro-wrapper {
+    height: 90vh;
+    width: 75%;
+
+  }
+
+}
