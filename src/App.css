@@ -127,5 +127,20 @@
     width: 75%;
 
   }
+}
 
+/* ----------------------- GET STARTED PAGE -----------------------*/
+
+.traits-background {
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+}
+
+.traits-header-container h2 {
+  margin-top: 0px;
+  padding-top: 5%;
+  padding-left: 3%;
+  color: white;
+  font-weigh: 200;
 }

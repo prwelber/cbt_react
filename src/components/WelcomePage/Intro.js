@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Intro extends React.Component {
   getStartedClick (e) {
@@ -9,7 +10,7 @@ class Intro extends React.Component {
     return (
       <div className='intro-wrapper'>
         <div className='get-started-container'>
-          <a href='/getstarted' onClick={this.getStartedClick}><img src='../images/get_started_button.png' className='get-started-img' /></a>
+          <Link to='/traits'><img src='../images/get_started_button.png' className='get-started-img' role="presentation" /></Link>
         </div>
         <div className='what-is'>
           <span>WHAT IS THE <strong>CHARACTER BUILDING TOOL?</strong></span>
