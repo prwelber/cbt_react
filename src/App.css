@@ -189,3 +189,42 @@
   font-size: 12px;
   margin-top: 2%;
 }
+
+.trait-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* --------------- TRAIT QUESTIONS PAGE --------------- */
+
+.trait-questions-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.trait-questions-header {
+  background-color: black;
+  width: 55vw;
+  padding: 15px 20px 15px 20px;
+  margin-top: 1em;
+}
+
+
+
+.trait-question-header-title {
+  color: white;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.description-container {
+  width: 75%;
+}
+
+.trait-question-header-description {
+  color: white;
+  font-size: .9em;
+  font-weight: 200;
+  margin: 0;
+  padding-top: 1em;
+}
