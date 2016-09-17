@@ -200,6 +200,8 @@
 .trait-questions-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .trait-questions-header {
@@ -207,6 +209,7 @@
   width: 55vw;
   padding: 15px 20px 15px 20px;
   margin-top: 1em;
+  border-bottom: 2px solid #00BFFF;
 }
 
 
@@ -227,4 +230,10 @@
   font-weight: 200;
   margin: 0;
   padding-top: 1em;
+}
+
+.QA-container {
+  background-color: #fdfdfd;
+  width: 55vw;
+  padding: 15px 20px 15px 20px;
 }

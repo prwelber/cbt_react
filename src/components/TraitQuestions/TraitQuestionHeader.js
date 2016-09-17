@@ -12,7 +12,6 @@ class TraitQuestionHeader extends React.Component {
         <div className="description-container">
           <p className="trait-question-header-description">{this.props.description}</p>
         </div>
-
       </div>
     )
   }
