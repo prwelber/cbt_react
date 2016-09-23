@@ -237,3 +237,35 @@
   width: 55vw;
   padding: 15px 20px 15px 20px;
 }
+
+/*------------- QUESTION AND ANSWER DIV -------------*/
+.qa {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.qa-question {
+  color: #2d85b0;
+  padding-bottom: .5em;
+}
+
+.qa-textarea {
+  padding: 1em;
+  box-shadow: rgb(177, 175, 175) 0px 0px 7px inset;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  max-width: 54vw;
+  resize: none;
+  height: 5em;
+}
+
+.qa-save-answer {
+  width: 10em;
+  margin-top: .5em;
+}
+/* made this an inline style for experimentation */
+/*.submit-answers {
+  display: flex;
+  justify-content: center;
+}*/
