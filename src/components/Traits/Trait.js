@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 class Trait extends React.Component {
   makeLink(title) {
-    return `prompts/${title.replace(/ /g, "")}`.toLowerCase();
+    return `prompts/${title.replace(/ /g, "_")}`.toLowerCase();
   }
   render() {
     return (
