@@ -2,9 +2,9 @@ import React from 'react';
 import QA from './QA';
 
 class TraitQuestionAnswers extends React.Component {
-  submitAnswers = () => {
-    console.log('submitAnswers');
-    this.props.handleSubmit();
+  submitAnswers = (question, answer) => {
+    console.log('from submitAnswers', question, answer);
+    this.props.handleSubmit(question, answer);
   }
   render () {
     // var divStyle = {

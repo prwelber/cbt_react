@@ -15,7 +15,10 @@ class QA extends React.Component {
   }
   saveAnswer = () => {
     console.log('saveAnswer')
-    this.props.onSave();
+    var question = this.refs.question.textContent;
+    var answer = this.refs.textarea.value;
+    console.log('refs', question, answer);
+    this.props.onSave(question, answer);
   }
   render () {
     var buttonStyle;
@@ -24,9 +27,11 @@ class QA extends React.Component {
     }
     return (
       <div className="qa">
-        <span className="qa-question">{this.addOne(this.props.number)}) {this.props.question}</span>
-        <textarea className="qa-textarea" placeholder="Enter your answer here..."></textarea>
-        <button className="qa-save-answer" onMouseOver={this.buttonHover} onMouseOut={this.buttonOut} onClick={this.saveAnswer} style={buttonStyle}>Save Answer #{this.addOne(this.props.number)}</button>
+        <p className="qa-question">{this.addOne(this.props.number)}) <span className="qa-question" ref="question">{this.props.question}</span></p>
+        <textarea className="qa-textarea" placeholder="Enter your answer here..." ref="textarea"></textarea>
+        <button className="qa-save-answer" onMouseOver={this.buttonHover} onMouseOut={this.buttonOut} onClick={this.saveAnswer} style={buttonStyle}>
+          Save Answer #{this.addOne(this.props.number)}
+        </button>
       </div>
     )
   }

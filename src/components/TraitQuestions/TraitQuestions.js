@@ -36,7 +36,7 @@ var data = [
 class TraitQuestions extends React.Component {
   componentWillMount () {
     console.log('componentWillMount and props', this.props.params.trait);
-    var info = data.map(el => {
+    data.map(el => {
       console.log('el.name', el.name)
       if (el.name === this.props.params.trait) {
 
@@ -46,15 +46,15 @@ class TraitQuestions extends React.Component {
         return el;
       }
     });
-    // this.setState({
-    //   data: info[0]
-    // });
+
+
   }
   componentDidMount () {
+
   }
 
-  sendAnswerToServer () {
-    console.log('sendAnswerToServer');
+  sendAnswerToServer = (question, answer) => {
+    console.log('sendAnswerToServer', question, answer);
     // submit answer to server
   }
 
